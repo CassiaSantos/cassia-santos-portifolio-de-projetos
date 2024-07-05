@@ -73,6 +73,64 @@ header nav a:nth-child(2n-1){
     margin-right: auto;
 }
 
+/* Sessão Principal da página */
+.hero-section{
+    padding-right: 0; /* a imagem ficará sempre ao lado direito*/
+    padding-bottom: 16rem;
+}
+
+.hero-section img{
+    display: block;
+    margin: 1.25rem, 0, 0, auto;
+    max-width: 50%;
+    border-radius: 250px;
+    margin-right: 50px;
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 105%;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    line-height: 25px;
+    padding-right: 1.25rem;
+}
+
+/* Os detalhes no texto não possuem finalidade na página a não ser estilização, dessa maneira, serão implementados pelo CSS com pseudoseletores: */
+.hero-section .orange-button{
+    position: relative; /* Para ser possível utilizar seu pseudoseletor com a posição absoluta*/
+}
+
+.hero-section .orange-button::after{
+    content: ' ';
+    background: url("https://raw.githubusercontent.com/CassiaSantos/Jazz-School-Toms_LandingPage/6b57cbbd9b5fc964a6c0e5077890545d6c35fed3/img/arrow-curve.svg");
+    position: absolute;
+    width: 132px;
+    height: 48px;
+    top: 5rem;
+    right: -1rem;
+}
+
+.decoration{
+    display: block;
+    position: relative;
+}
+
+.decoration::after{
+    content: ' ';
+    background: url("https://raw.githubusercontent.com/CassiaSantos/Jazz-School-Toms_LandingPage/6b57cbbd9b5fc964a6c0e5077890545d6c35fed3/img/three-dashes.svg");
+    position: absolute;
+    height: 36px;
+    width: 40px;
+    top: -0.77rem;
+}
+
 footer{
     border-bottom: none;
     display: flex;
