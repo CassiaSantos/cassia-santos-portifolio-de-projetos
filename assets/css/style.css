@@ -131,6 +131,53 @@ h2{
     top: -0.77rem;
 }
 
+/* Sessão de projetps da página */
+.courses-section{
+    padding-bottom: 7rem;
+}
+
+.cards-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: start; /*ficarão alinhados à esquerda*/
+    gap: 1.25rem;
+    margin-top: -8rem; /* margem negativa fará os cars subirem*/
+    margin-bottom: 4rem;
+}
+
+/* Estilização interna do card */
+.card{
+    background-color: var(--color-primary);
+    border: 2px;
+    border-style: solid;
+    box-shadow: 4px 4px 0 var(--black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n){
+    background-color: var(--color-secondary);
+    align-self: end;
+}
+
+.bootstrap-icon{
+    min-width: 500px !important;
+}
+
+.nome-curso{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.card a{
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content; /* largura se ajusta ao conteúdo, e então ele fica no canto */
+}
+
+/* Sessão de rodapé da página */
 footer{
     border-bottom: none;
     display: flex;
