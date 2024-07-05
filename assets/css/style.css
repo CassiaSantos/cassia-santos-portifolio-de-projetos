@@ -1,3 +1,4 @@
+/* Normalização simples: */
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -109,7 +110,7 @@ h2{
 
 .hero-section .orange-button::after{
     content: ' ';
-    background: url("https://raw.githubusercontent.com/CassiaSantos/Jazz-School-Toms_LandingPage/6b57cbbd9b5fc964a6c0e5077890545d6c35fed3/img/arrow-curve.svg");
+    background: url("https://raw.githubusercontent.com/CassiaSantos/cassia-santos-portifolio-de-projetos/a5168930f12bc127ace10c81337bb4f1fdebb96e/assets/img/arrow-curve.svg");
     position: absolute;
     width: 132px;
     height: 48px;
@@ -124,14 +125,13 @@ h2{
 
 .decoration::after{
     content: ' ';
-    background: url("https://raw.githubusercontent.com/CassiaSantos/Jazz-School-Toms_LandingPage/6b57cbbd9b5fc964a6c0e5077890545d6c35fed3/img/three-dashes.svg");
+    background: url("https://raw.githubusercontent.com/CassiaSantos/cassia-santos-portifolio-de-projetos/a5168930f12bc127ace10c81337bb4f1fdebb96e/assets/img/three-dashes.svg");
     position: absolute;
     height: 36px;
     width: 40px;
     top: -0.77rem;
 }
 
-/* Sessão de projetps da página */
 .courses-section{
     padding-bottom: 7rem;
 }
@@ -173,7 +173,6 @@ h2{
     width: fit-content; /* largura se ajusta ao conteúdo, e então ele fica no canto */
 }
 
-/* Sessão de rodapé da página */
 footer{
     border-bottom: none;
     display: flex;
@@ -214,6 +213,7 @@ footer nav a{
     width: 90%;
 }
 
+
 /* Classes úteis: */
 .mt-1{
     margin-top: 1rem;
@@ -243,7 +243,6 @@ footer nav a{
 .text-center{
     text-align: center;
 }
-
 
 /* RESPONSIVIDADE */
 @media screen and (min-width: 40rem) {
