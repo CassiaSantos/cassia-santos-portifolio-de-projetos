@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Corres do projeto: */
+:root{ 
+    --color-primary: #D67BFF;
+    --color-secondary: #FFA732;
+    --black: #000000;
+    --withe: #ffffff;
+    --background: linear-gradient(90deg, #ffe701 0%, #fff2e6 100%);
+}
+
+body{
+    background-color: var(--background);
+    padding: 0 1rem; /*espaçamento na lateral da página*/
+}
+
+.logo{
+    max-width: 5rem;
+}
+/* Cabeçalho do página: */
+header, .hero-section, .courses-section, footer{
+    border-width: 0 1px 1px 1px;
+    border-style:solid;
+    border-color: var(--black);
+    padding: 1.25rem;
+}
+
+header img{
+    display: block;
+    margin: 1rem auto;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divisão do conteúdo em 2 colunas */
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--black);
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+/* Alinhar à direita itens do lado esquerda */
+header nav a:nth-child(2n-1){
+    text-align:right;
+}
+
+.orange-button {
+    background-color: var(--color-primary);
+    color: var(--black);
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    border: 2px solid var(--black);
+    box-shadow: 4px 4px 0 var(--black);
+    display: block;
+    max-width: 14rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
