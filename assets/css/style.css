@@ -72,3 +72,43 @@ header nav a:nth-child(2n-1){
     margin-left: auto;
     margin-right: auto;
 }
+
+footer{
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.25rem 4rem;
+}
+
+footer img{
+    display: block;
+    margin: 1rem auto;
+}
+
+footer span{
+    color: #D67BFF
+}
+
+footer nav a{
+    display: block;
+    padding-left: 0;
+    padding: 1.25rem;
+   text-align: center;
+}
+
+.newsletter-form{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.newsletter-form .email{
+    background-color: #ffffff;
+    display: block;
+    border-style: solid;
+    box-shadow: 4px 4px 0 var(--black);
+    padding: .5rem;
+    font-size: 1.25rem;
+    width: 90%;
+}
