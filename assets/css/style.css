@@ -160,10 +160,6 @@ h2{
     align-self: end;
 }
 
-.bootstrap-icon{
-    min-width: 500px !important;
-}
-
 .nome-curso{
     display: block;
     font-size: 1.5rem;
@@ -246,4 +242,95 @@ footer nav a{
 
 .text-center{
     text-align: center;
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (min-width: 40rem) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    .cards-cursos {
+        flex-direction: row;
+        flex-wrap: wrap; /* quebra a linha ao ultrapassar largura máxima da página*/
+        justify-content: center;
+    }
+
+    .card:nth-child(2n){
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    header div{
+        display: flex; /*conteúdo da div ficar organizado horizontalmente*/
+        align-items: center; /* ajustou altura dos links de navegação*/
+        justify-content: space-between;
+    }
+
+    header img,
+    header nav a,
+    header .orange-button {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:72rem) {
+    .container{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    
+    .container.row-reverse{
+        flex-direction: row-reverse; /*altera a ordem padrão do flex: da esquerda para a direita*/
+    }
+    
+    .hero-section .orange-button{
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    footer .container{
+        margin: 0 5rem;
+    }
+
+    footer img {
+       margin-left: 0;
+    }
+
+    .about-column{
+        flex: 3;
+    }
+
+    .about-column p{
+        font-size: 1.25rem;
+        max-width: 16rem;
+        text-align: left;
+    }
+
+    footer nav {
+        flex: 3.5;
+    }
+
+    .newsletter-form{
+        flex: 5.5;
+    }
+}
+
+/* Telas full HD: */
+@media screen and (min-width:80rem) {
+    .container{
+        max-width: 80rem;
+    }
 }
