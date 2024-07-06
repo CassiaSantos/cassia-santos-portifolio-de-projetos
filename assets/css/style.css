@@ -101,6 +101,7 @@ h2{
     font-size: 1.25rem;
     line-height: 25px;
     padding-right: 1.25rem;
+    text-align: justify;
 }
 
 /* Os detalhes no texto não possuem finalidade na página a não ser estilização, dessa maneira, serão implementados pelo CSS com pseudoseletores: */
@@ -171,6 +172,11 @@ h2{
     display: block;
     margin: 3rem 0 0 auto;
     width: fit-content; /* largura se ajusta ao conteúdo, e então ele fica no canto */
+}
+
+.card p{
+    text-align: justify;
+    margin-right:2rem;
 }
 
 footer{
